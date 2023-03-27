@@ -22,7 +22,13 @@
 #include "Randomize.hh"
 #include "G4VisExecutive.hh"
 #include "G4UIExecutive.hh"
+/*
+This code will be developed further for the specific usages and experimentation of the 
+medical imaging techniques, systems, devices, materials, with geometries which are not specified yet.
 
+This is under construction but should create a foundation to act as a starting point.
+
+*/
 int main(int argc,char** argv)
 {
   // Construct the run manager
