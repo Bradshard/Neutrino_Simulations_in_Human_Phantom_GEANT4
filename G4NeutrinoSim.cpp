@@ -36,7 +36,10 @@ int main(int argc,char** argv)
 
   // Set up the physics list
   G4PhysListFactory factory;
-  G4VModularPhysicsList* physList = factory.GetReferencePhysList("FTFP_BERT");
+  G4VModularPhysicsList* physList = factory.GetReferencePhysList("FTFP_BERT"); //  BERT is bertini cascade model
+  // we will follow this reference for to develop our model for <20 GeV actually 
+  // ours is much lower <5GeV in thermal energy low energy
+  // what we use here is 10 MeV, neutrino.
   physList->RegisterPhysics(new G4DecayPhysics());
   physList->RegisterPhysics(new G4RadioactiveDecayPhysics());
   physList->RegisterPhysics(new G4EmStandardPhysics());
